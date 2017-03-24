@@ -1,0 +1,23 @@
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<span class="copyright">{{footer.title}}</span>
+			</div>
+			<div class="col-md-4 text-center">
+				<ul class="list-inline social-buttons">
+				{{#each footer.icons}}
+                    <li><a href="{{url}}"><i class="{{icon}}"></i></a></li>
+				{{/each}}
+                </ul>
+			</div>
+			<div class="col-md-4 text-center">
+				<ul class="list-inline quicklinks">
+				{{#each footer.ends}}
+					<li><a href="">{{end}}</a></li>
+				{{/each}}
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>

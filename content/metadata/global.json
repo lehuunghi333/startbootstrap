@@ -1,0 +1,10 @@
+{
+  "title": "Start bootstrap",
+  "description": "description of this site",
+  "url": "https://easywebhub.com",
+  "github-url" : "https://easywebhub.github.io/test-easyapp/", 
+  "meta-tag" : {
+    "keywords": "easy web, thiết kế web đơn giản,",
+    "author": "vinaas ltd.,co"
+  }
+}

@@ -1,0 +1,27 @@
+<nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+			</button>
+			<a href="" class="navbar-brand">{{menu.title}}</a>
+		</div>
+		<div class="navbar-collapse collapse" id="menu">
+			<ul class="nav navbar-nav navbar-right">
+				{{#each menu.items}}
+				<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<header>
+	<div class="container">
+		<div class="intro-text">
+			<div class="intro-lead-in">{{menu.intro}}</div>
+			<div class="intro-heading">{{menu.nice}}</div>
+			<a href="#services" class="page-scroll btn btn-xl">{{menu.tell_me}}</a>
+		</div>
+	</div>
+</header>

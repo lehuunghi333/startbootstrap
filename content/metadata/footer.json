@@ -1,0 +1,12 @@
+{
+  "title": "Copy Right &copy; Your website 2016",
+  "icons" : [
+      {"icon" : "fa fa-twitter btn-github", "url" : "#"},
+      {"icon" : "fa fa-facebook btn-github", "url" : "#"},
+      {"icon" : "fa fa-linkedin btn-github", "url" : "#"}
+  ],
+  "ends" : [
+      {"end" : "Privacy Policy", "url" : "#"},
+      {"end" : "Terms of Use", "url" : "#"}
+  ]
+}

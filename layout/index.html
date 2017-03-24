@@ -1,0 +1,177 @@
+{{#extend "default"}}
+  {{#content "main"}}
+
+    <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">{{services.title}}</h2>
+          <h3 class="section-subheading text-muted">{{services.info}}</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        {{#each services.icons}}
+        <div class="col-lg-4">
+          <span class="{{span}}">
+            <i class="{{circle}}"></i>
+            <i class="{{icon}}"></i>
+          </span>
+          <h4 class="services-heading">{{name}}</h4>
+          <p class="text-muted intro-p">{{info-p}}</p>
+        </div>
+        {{/each}} 
+      </div>
+    </div>
+  </section>
+  <section id="portfolio" class="bg-light-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">{{portfolio.title}}</h2>
+          <h3 class="section-subheading">{{portfolio.info}}</h3>
+        </div>
+      </div>
+      <div class="row">
+      {{#each portfolio.items}}
+        <div class="col-md-4 col-md-6 portfolio-item">
+          <a href="" class="portfolio-link">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="{{fa-3x}}"></i>
+              </div>
+            </div>
+            <img src="{{image}}" class="img-responsive" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>{{name}}</h4>
+            <p class="text-muted">{{info}}</p>
+          </div>
+        </div>
+      {{/each}}
+      <!-- end items -->
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">{{about.title}}</h2>
+          <h3 class="section-subheading text-muted">{{about.info}}</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            {{#each about.star}}
+            <li class="{{class}}">
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="{{image}}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>{{sine}}</h4>
+                  <h4 class="subheading">{{again}}</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">{{info}}</p>
+                </div>
+              </div>
+            </li>
+            {{/each}}
+            <!-- end images/about/3.jpg -->
+             <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <h4>Be Part
+                        <br>Of Our
+                        <br>Story!
+                    </h4>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="team" class="bg-light-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">{{team.title}}</h2>
+          <h3 class="section-subheading">{{team.info}}</h3>
+        </div>
+      </div>
+      <div class="row">
+        {{#each team.our}}
+        <div class="col-lg-4">
+          <div class="team-member">
+            <img class="img-circle img-responsive" src="{{image}}" alt="">
+            <h4>{{name}}</h4>
+            <p class="text-muted">{{designer}}</p>
+            <ul class="list-inline social-buttons">
+                <li><a href="{{url-tw}}"><i class="{{icon-tw}}"></i></a></li>
+                <li><a href="{{url-fb}}"><i class="{{icon-fb}}"></i></a></li>
+                <li><a href="{{url-li}}"><i class="{{icon-li}}"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        {{/each}}
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <p class="large text-muted">{{team.info-team}}</h3>
+        </p>
+      </div>
+    </div>
+  </section>
+  <aside class="clients">
+    <div class="container">
+      <div class="row">
+        {{#each clients.imgs}}
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <img src="{{image}}" class="img-responsive img-centered" alt="">
+          </a>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </aside>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">{{contact.title}}</h2>
+          <h3 class="section-subheading text-muted">{{contact.info}}</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form name="sentMessage" id="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                {{#each contact.form}}
+                <div class="form-group">
+                  <input type="{{type}}" class="form-control" placeholder="{{placeholder}}" id="{{id}}"
+                  required data-validation-required-message="{{required}}">
+                  <p class="{{help-block}}"></p>
+                </div>
+                {{/each}}
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="{{contact.placeholder}}" id="{{contact.id}}" required data-validation-required-message="{{contact.required}}"></textarea>
+                  <p class="{{contact.help-block}}"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-md-12 text-center">
+                <div id="success"></div>
+                <button type="submit" class="btn btn-xl">{{contact.send}}</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{/content}}
+{{/extend}}

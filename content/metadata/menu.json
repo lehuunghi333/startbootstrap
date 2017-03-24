@@ -1,0 +1,33 @@
+{
+    "title": "Strart Bootstrap",
+    "intro": "Chào mừng bạn đến với easywebsite",
+    "nice": "It's Nice To Meet You",
+    "tell_me": "Tell Me More",
+    "items": [
+        {
+            "class": "active",
+            "url": "#services",
+            "title": "SERVICES"
+        },
+        {
+            "class": "",
+            "url": "#portfolio",
+            "title": "PORTFOLIO"
+        },
+        {
+            "class": "",
+            "url": "#about",
+            "title": "ABOUT"
+        },
+        {
+            "class": "",
+            "url": "#team",
+            "title": "TEAM"
+        },
+        {
+            "class": "",
+            "url": "#contact",
+            "title": "CONTACT"
+        }
+    ]
+}
